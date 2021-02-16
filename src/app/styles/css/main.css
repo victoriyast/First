@@ -1,7 +1,56 @@
-a {
-  color: black;
-  font-size: 16px;
+@font-face {
+  font-family: "Conv_Montserrat-Medium";
+  src: url("fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-a:hover {
-  color: #0004ff;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.container {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.button {
+  border-radius: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 320px;
+  height: 44px;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.header {
+  padding: 26px 0;
+}
+.header__contant {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__nav {
+  display: flex;
+}
+.header__list {
+  display: flex;
+  padding-left: 0;
+  min-width: 444px;
+  list-style: none;
+  justify-content: space-between;
+}
+.header__link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+.header__link :hover {
+  color: black;
+}
+.header__button {
+  width: 196px;
+  height: 34px;
 }
