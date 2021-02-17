@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
-  font-family: "Conv_Montserrat-Medium";
+  font-family: "Montserrat";
   src: url("fonts/Montserrat-Regular.ttf");
   font-weight: normal;
   font-style: normal;
@@ -7,7 +11,11 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 17px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -16,13 +24,35 @@ body {
 }
 
 .button {
-  border-radius: 22px;
-  color: #fff;
+  font-weight: bold;
+}
+.button__link {
+  padding: 9px 20px 10px 20px;
   text-transform: uppercase;
-  width: 320px;
-  height: 44px;
+  text-decoration: none;
+  border-radius: 22px;
+}
+.button__link-enter {
+  position: relative;
+  color: #BC9CFF;
+  background: #fff;
+}
+.button__link-enter::before {
+  position: absolute;
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  z-index: -1;
+}
+.button__link-create {
+  color: #fff;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
 .header {
@@ -35,22 +65,39 @@ body {
 }
 .header__nav {
   display: flex;
-}
-.header__list {
-  display: flex;
-  padding-left: 0;
-  min-width: 444px;
-  list-style: none;
+  min-width: 66.3%;
+  align-items: center;
   justify-content: space-between;
 }
 .header__link {
   text-decoration: none;
   color: rgba(31, 32, 65, 0.5);
 }
-.header__link :hover {
-  color: black;
+.header__link:hover {
+  color: #BC9CFF;
 }
-.header__button {
-  width: 196px;
-  height: 34px;
+.header__link-dropdown {
+  position: relative;
+  margin-right: 21px;
+}
+.header__link-dropdown::after {
+  content: "";
+  display: table;
+  clear: both;
+  position: absolute;
+  top: 3.5px;
+  left: 49px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  border-bottom: 2px solid #1f20418a;
+  border-right: 2px solid #1f20418a;
+}
+.header__link-dropdown::after:first-child {
+  left: 100px;
+}
+.header__link--active {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: 700;
 }
