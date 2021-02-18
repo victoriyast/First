@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",
+    "css-loader": "^5.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "pug": "^3.0.0",
+    "sass-loader": "^11.0.1",
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
