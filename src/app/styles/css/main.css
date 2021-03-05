@@ -21,6 +21,13 @@
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Quicksand";
+  src: url("fonts/Quicksand-Regular.eot");
+  src: local("☺"), url("fonts/Quicksand-Regular.woff") format("woff"), url("fonts/Quicksand-Regular.ttf") format("truetype"), url("fonts/Quicksand-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 13.5px;

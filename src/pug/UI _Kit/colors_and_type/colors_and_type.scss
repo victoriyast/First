@@ -6,13 +6,20 @@ $main-color: #1F2041;
 $font-size: 19px;
 
 .color-list {
-  width: 271px;
   &__item {
   position: relative;
-  font-size: $font-size;
-  line-height: 27.79px;
+  display: flex;
+  align-items: center;
+  height: 70px;
   margin-bottom: 34px;
+  font-size: $font-size;
+  font-stretch: extra-expanded;
+  line-height: 27.79px;
+  letter-spacing: 0.5px;
   padding-left: 110px;
+  }
+  &__hex-code {
+    font-family: 'Quicksand', sans-serif ;
   }
   &__sample {
     position: absolute;
