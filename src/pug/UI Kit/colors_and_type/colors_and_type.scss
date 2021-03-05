@@ -1,0 +1,47 @@
+@import '../../../app/styles/scss/reset.scss';
+@import '../../../app/styles/scss/fonts.scss';
+@import '../../../app/styles/scss/template.scss';
+
+$main-color: #1F2041;
+$font-size: 19px;
+
+.color-list {
+  width: 271px;
+  &__item {
+  position: relative;
+  font-size: $font-size;
+  line-height: 27.79px;
+  margin-bottom: 34px;
+  padding-left: 110px;
+  }
+  &__sample {
+    position: absolute;
+    display: inline-block;
+    top: 2px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    &-first {
+      background-color: $main-color;
+    }
+    &-second {
+      background-color: transparentize($main-color, 0.25);
+    }
+    &-third {
+      background-color: transparentize($main-color, 0.5);
+    }
+    &-fourth {
+      background-color: transparentize($main-color, 0.75);
+    }
+    &-fifth {
+      background-color: transparentize($main-color, 0.95);
+    }
+    &-sixth {
+      background-color: #BC9CFF;
+    }
+    &-seventh {
+      background-color: #6FCF97;
+    }
+  }
+}

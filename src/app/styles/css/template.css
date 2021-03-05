@@ -1,11 +1,4 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 @font-face {
   font-family: "Montserrat-Regular";
   src: url("fonts/Montserrat-Regular.eot");
@@ -21,6 +14,13 @@
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 13.5px;
@@ -70,38 +70,4 @@ body {
 }
 .button__link-activation:hover {
   background-image: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
-}
-
-.header {
-  padding: 15px 0;
-}
-.header__content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.header__nav {
-  display: flex;
-  min-width: 66.3%;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__link {
-  position: relative;
-  text-decoration: none;
-  color: rgba(31, 32, 65, 0.5);
-}
-.header__link:hover {
-  color: #BC9CFF;
-}
-.header__link-dropdown {
-  padding: 0 24px 0 10px;
-}
-.header__dropdown-icon {
-  position: absolute;
-  top: -3px;
-}
-.header__link--active {
-  color: rgba(31, 32, 65, 0.75);
-  font-weight: 700;
 }
