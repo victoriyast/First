@@ -11,20 +11,18 @@ $font-size: 19px;
   display: flex;
   align-items: center;
   height: 70px;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   font-size: $font-size;
-  font-stretch: extra-expanded;
-  line-height: 27.79px;
   letter-spacing: 0.5px;
   padding-left: 110px;
   }
-  &__hex-code {
-    font-family: 'Quicksand', sans-serif ;
-  }
+  // &__hex-code {
+  //   font-family: 'Quicksand-Regular', sans-serif ;
+  // }
   &__sample {
     position: absolute;
     display: inline-block;
-    top: 2px;
+    top: 0;
     left: 0;
     width: 70px;
     height: 70px;
@@ -50,5 +48,12 @@ $font-size: 19px;
     &-seventh {
       background-color: #6FCF97;
     }
+  }
+}
+
+
+.text-sample {
+  &__item {
+    display: inline-block;
   }
 }
