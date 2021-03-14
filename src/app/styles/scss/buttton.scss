@@ -1,0 +1,47 @@
+@import './template.scss';
+
+
+$font-size: 12px;
+$font-weight: 700;
+$padding: 9px 20px 10px 20px;
+$linear-gragient-main: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+$linear-gragient-hover: linear-gradient(180deg, rgb(188, 156, 255, 0.5), rgb(139, 164, 249, 0.5));
+$linear-gragient-border: linear-gradient(white,  white), linear-gradient(180deg , #BC9CFF, #8BA4F9);
+$border-radius: 22px;
+
+.button {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    &__link {
+      padding: $padding;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.8px;
+      border-radius: $border-radius;
+    }
+    &__enter {
+      width: 87px;
+      height: 34px;
+      border: double 2px transparent;
+      border-radius: $border-radius;
+      background-image: $linear-gragient-border;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+    &__link-enter {
+      padding: 10.5px 21.5px;
+      display: inline-block;
+      margin: -2px 0 0 -2px;
+      color: #BC9CFF;
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.5);
+      }
+    }
+    &__link-activation { 
+      color: #fff;
+      background-image: $linear-gragient-main;
+      &:hover {
+        background-image: $linear-gragient-hover;
+      }
+    }
+  }
