@@ -5,20 +5,33 @@
 $main-color: #1F2041;
 $font-size: 19px;
 
+
+.logo-colorless {
+  padding: 30px;
+}
+
+
+.colors_and_type {
+  height: 610px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .color-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
   &__item {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
-  margin-bottom: 20px;
   font-size: $font-size;
   letter-spacing: 0.5px;
   padding-left: 110px;
   }
-  // &__hex-code {
-  //   font-family: 'Quicksand-Regular', sans-serif ;
-  // }
   &__sample {
     position: absolute;
     display: inline-block;
@@ -52,8 +65,27 @@ $font-size: 19px;
 }
 
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
 .text-sample {
-  &__item {
+  &__text {
+    display: inline-block;
+  }
+  &__title {
     display: inline-block;
   }
 }
+
+
