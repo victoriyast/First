@@ -2,7 +2,7 @@
 @import './reset.scss';
 
 $font-family: 'Montserrat-Regular', sans-serif;
-$font-size: 13.5px;
+$font-size: 14px;
 $font-weight: 400;
 $container-weight: 80.556%;
 
@@ -12,10 +12,15 @@ body {
     font-weight: $font-weight;
   }
   
-  .container {
-    max-width: $container-weight;
-    margin: auto;
-  }
+.container {
+  max-width: $container-weight;
+  margin: auto;
+}
+
+.h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
   
 
   

@@ -140,9 +140,36 @@ h3 {
   text-transform: uppercase;
 }
 
-.text-sample__text {
-  display: inline-block;
+.colors_and_type {
+  max-width: 1132px;
+  margin: auto;
 }
+
+.text-sample__item {
+  display: flex;
+  max-width: 440px;
+  margin-bottom: 51px;
+}
+
 .text-sample__title {
-  display: inline-block;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.text-sample__text {
+  margin-left: 30px;
+}
+
+.text-sample__title-first {
+  font-size: 24px;
+}
+
+.text-sample__title-second {
+  font-size: 19px;
+}
+
+.text-sample__title-third {
+  font-size: 12px;
 }
